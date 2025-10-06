@@ -1,0 +1,42 @@
+tests:
+  - name: "Example 1: [2,7,11,15], target=9"
+    function: two_sum
+    input:
+      nums: [2, 7, 11, 15]
+      target: 9
+    expected: [0, 1]
+
+  - name: "Example 2: [3,2,4], target=6"
+    function: two_sum
+    input:
+      nums: [3, 2, 4]
+      target: 6
+    expected: [1, 2]
+
+  - name: "Example 3: [3,3], target=6"
+    function: two_sum
+    input:
+      nums: [3, 3]
+      target: 6
+    expected: [0, 1]
+
+  - name: "Two elements only"
+    function: two_sum
+    input:
+      nums: [1, 2]
+      target: 3
+    expected: [0, 1]
+
+  - name: "Negative numbers"
+    function: two_sum
+    input:
+      nums: [-1, -2, -3, -4, -5]
+      target: -8
+    expected: [2, 4]
+
+  - name: "Large numbers"
+    function: two_sum
+    input:
+      nums: [1000000000, 2, 3, 999999999]
+      target: 1999999999
+    expected: [0, 3]

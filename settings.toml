@@ -1,0 +1,23 @@
+[app]
+workspace_dir = "~/mochi_practice"
+auto_save_interval_s = 30
+
+[coach]
+helpfulness = "balanced"     # "gentle" | "balanced" | "insistent"
+personality = "supportive"   # "supportive" | "neutral" | "challenging"
+nudge_interval_s = 30
+force_big_o_at_end = true
+allow_code_hints = false     # Never give direct code
+
+[llm]
+engine = "openai"           # "openai" | "anthropic"
+model = "gpt-4o-mini"       # or "claude-3-5-sonnet-20241022" for anthropic
+temperature = 0.3
+max_tokens = 600
+timeout_s = 10
+
+[harness]
+language = "python"
+timeout_ms = 4000
+memory_mb = 512
+max_output_lines = 100
